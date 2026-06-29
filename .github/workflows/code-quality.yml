@@ -25,8 +25,8 @@ jobs:
       - name: Grant execute permission
         run: chmod +x mvnw
 
-      - name: Run Format Check
-        run: ./mvnw spotless:check
+      - name: Run Checkstyle
+        run: ./mvnw checkstyle:check
 
       - name: Run PMD
         run: ./mvnw pmd:check
