@@ -25,6 +25,8 @@ public class TestAPI {
 
 	@GetMapping("/users")
 	public List<UserDTO> getUsers() {
+		String d = null;
+		System.out.println(d.length());
 		List<UserDTO> data = userRepository.findAllUser();
 		IO.println("Data : " + data.size());
 		return data;
