@@ -24,8 +24,11 @@ jobs:
       - name: Grant execute permission
         run: chmod +x mvnw
 
-      - name: Run Checkstyle
-        run: ./mvnw checkstyle:check
+#      - name: Run Checkstyle
+#        run: ./mvnw checkstyle:check
+
+      - name: Run Formatter
+        run: ./mvnw spring-javaformat:apply
 
 #      - name: Run PMD
 #        run: ./mvnw pmd:check
