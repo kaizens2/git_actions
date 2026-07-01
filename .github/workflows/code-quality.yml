@@ -28,7 +28,7 @@ jobs:
 #        run: ./mvnw checkstyle:check
 
       - name: Run Formatter
-        run: ./mvnw spring-javaformat:apply
+        run: ./mvnw spring-javaformat:validate
 
       - name: Run PMD
         run: ./mvnw pmd:check
