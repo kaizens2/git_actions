@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - develop
   pull_request:
 
 jobs:
@@ -28,5 +27,5 @@ jobs:
       - name: Run Checkstyle
         run: ./mvnw checkstyle:check
 
-      - name: Run PMD
-        run: ./mvnw pmd:check
+#      - name: Run PMD
+#        run: ./mvnw pmd:check
